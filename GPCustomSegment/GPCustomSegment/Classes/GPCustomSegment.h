@@ -14,6 +14,7 @@
 @property (nonatomic, assign) NSInteger selectedSegmentIndex;
 @property (nonatomic, readonly) NSUInteger imagesCount;
 @property (nonatomic, assign) UIEdgeInsets imageInsets;
+@property (nonatomic, assign) CGFloat borderWidth;
 
 - (instancetype)initWithImages:(NSArray *)images
             disabledImageColor:(UIColor *)disabledImageColor

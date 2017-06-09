@@ -299,7 +299,7 @@ static const NSTimeInterval kAnimationDuration = 0.3f;
     UIView *viewBackBorders = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width ,self.frame.size.height )];
     viewBackBorders.layer.cornerRadius = CGRectGetHeight([self frame]) / 2.0f;
     viewBackBorders.layer.borderColor = _borderColor.CGColor;
-    viewBackBorders.layer.borderWidth = 1.0f;
+    viewBackBorders.layer.borderWidth = _borderWidth;
     viewBackBorders.layer.masksToBounds = YES;
     [self addSubview:viewBackBorders];
     viewBackBorders.layer.zPosition = -90;
