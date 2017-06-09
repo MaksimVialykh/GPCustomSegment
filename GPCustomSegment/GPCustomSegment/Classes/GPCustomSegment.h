@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) NSUInteger imagesCount;
 @property (nonatomic, assign) UIEdgeInsets imageInsets;
 @property (nonatomic, assign) CGFloat borderWidth;
+@property (nonatomic, assign) CGFloat pressurePadding;
 
 - (instancetype)initWithImages:(NSArray *)images
             disabledImageColor:(UIColor *)disabledImageColor

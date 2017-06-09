@@ -404,14 +404,14 @@ static const NSTimeInterval kAnimationDuration = 0.3f;
     CGFloat width;
     if ([self imagesCount] > 0)
     {
-        width = CGRectGetWidth(self.bounds) / [self imagesCount] - 2;
+        width = CGRectGetWidth(self.bounds) / [self imagesCount] - _pressurePadding;
     }
     else
     {
-        width = CGRectGetWidth(self.bounds) - 2;
+        width = CGRectGetWidth(self.bounds) - _pressurePadding;
     }
     
-    CGFloat height = self.frame.size.height - 2;
+    CGFloat height = self.frame.size.height - _pressurePadding;
     
     return CGRectMake(self.bounds.origin.x, self.bounds.origin.y, width,height);
 }
