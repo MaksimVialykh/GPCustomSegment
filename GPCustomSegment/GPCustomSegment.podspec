@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GPCustomSegment'
-  s.version          = '0.0.7'
+  s.version          = '0.0.6'
   s.summary          = 'Custom segment with images'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'Nice segment with images. Just use.'
-  s.homepage         = 'https://github.com/gprokopchuk/GPCustomSegment'
+  s.homepage         = 'https://github.com/MaksimVialykh/GPCustomSegment.git'
   s.screenshots      = 'https://raw.githubusercontent.com/gprokopchuk/Screenshots/master/gpcustomsegment.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'George Prokopchuk' => 'prokopchukgeorge@icloud.com' }
