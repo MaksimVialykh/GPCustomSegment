@@ -13,6 +13,7 @@
 
 @property (nonatomic, assign) NSInteger selectedSegmentIndex;
 @property (nonatomic, readonly) NSUInteger imagesCount;
+@property (nonatomic, assign) UIEdgeInsets imageInsets;
 
 - (instancetype)initWithImages:(NSArray *)images
             disabledImageColor:(UIColor *)disabledImageColor

@@ -284,10 +284,10 @@ static const NSTimeInterval kAnimationDuration = 0.3f;
 
 - (CGRect)rectForImageViewAtIndex:(NSUInteger)index withSegmentWidth:(CGFloat)segmentWidth boundingRect:(CGRect)boundingRect
 {
-    CGFloat width = segmentWidth;
-    CGFloat height = CGRectGetHeight(boundingRect) * kCustomSegmentHeightMultiplier; // change size of image
-    CGFloat x = (segmentWidth * index);
-    CGFloat y = CGRectGetHeight(boundingRect) / 2 - height / 2;
+    CGFloat width = segmentWidth - _imageInsets.right;
+    CGFloat height = CGRectGetHeight(boundingRect) * kCustomSegmentHeightMultiplier - _imageInsets.bottom; // change size of image
+    CGFloat x = (segmentWidth * index) + _imageInsets.left;
+    CGFloat y = CGRectGetHeight(boundingRect) / 2 - height / 2 + _imageInsets.top;
     return CGRectMake(x, y, width, height);
 }
 
